@@ -1,0 +1,106 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalcApp</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="row">
+    <div class="large-12 columns">
+        <h1>CalculatorApp</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="large-4 columns">
+        <div class="primary callout">
+            <form>
+                        <label>Calculations:</label>
+                        <input id="display" type="text" value="0" disabled placeholder="Calculations"/>
+
+                <table>
+                    <tbody>
+                    <tr class="primary callout">
+                        <td>
+                            <button style="border-radius: 10%" type="button" id="ce" class="clear_btn my_button">CE</button>
+                        </td>
+                        <td>
+                            <button style="border-radius: 10%" type="button" id="c" class="clear_btn my_button">C</button>
+                        </td>
+                        <td>
+                            <button style="border-radius: 10%" type="button" class="operation my_button">/</button>
+                        </td>
+                        <td>
+                            <button style="border-radius: 10%" type="button" class="operation my_button">*</button>
+                        </td>
+                    </tr>
+                    <tr class="primary callout">
+                        <td>
+                            <button style="border-radius: 10%" type="button" class="number my_button">7</button>
+                        </td>
+                        <td>
+                            <button style="border-radius: 10%" type="button" class="number my_button">8</button>
+                        </td>
+                        <td>
+                            <button style="border-radius: 10%" type="button" class="number my_button">9</button>
+                        </td>
+                        <td>
+                            <button style="border-radius: 10%" type="button" class="operation my_button">-</button>
+                        </td>
+                    </tr>
+                    <tr class="primary callout">
+                        <td>
+                            <button style="border-radius: 10%" type="button" class="number my_button">4</button>
+                        </td>
+                        <td>
+                            <button style="border-radius: 10%" type="button" class="number my_button">5</button>
+                        </td>
+                        <td>
+                            <button style="border-radius: 10%" type="button" class="number my_button">6</button>
+                        </td>
+                        <td>
+                            <button style="border-radius: 10%" type="button" class="operation my_button">+</button>
+                        </td>
+                    </tr>
+                    <tr class="primary callout">
+                        <td>
+                            <button style="border-radius: 10%" type="button" class="number my_button">1</button>
+                        </td>
+                        <td>
+                            <button style="border-radius: 10%" type="button" class="number my_button">2</button>
+                        </td>
+                        <td>
+                            <button style="border-radius: 10%" type="button" class="number my_button">3</button>
+                        </td>
+                        <td>
+                            <button id="decimal" style="border-radius: 10%" type="button" class="my_button">.</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tr class="primary callout">
+                        <td>
+                            <button style="border-radius: 10%" type="button" class="number my_button2">0</button>
+                        </td>
+                        <td>
+                            <button style="border-radius: 10%" type="button" id="result" class="operation my_button2">=</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <p align="right">© Dmitry K.</p>
+        </div>
+    </div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/what-input/dist/what-input.js"></script>
+<script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+<script src="js/app.js"></script>
+<script src="calc.js"></script>
+</body>
+</html>
