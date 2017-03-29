@@ -1962,17 +1962,16 @@ p + .stat {
 .my_button {
 	width: 60px;
 	height: 60px;
-	background-color: #1779ba;
+	background-color: #7BA39A;
 	font-size: 27px;
 	color: #fefefe;
     border: 1px solid black;
-    border-radius: 10%
 }
 
 .my_button2 {
 	width: 140px;
 	height: 60px;
-	background-color: #1779ba;
+	background-color: #7BA39A;
 	font-size: 27px;
 	color: #fefefe;
 	text-transform: uppercase;
@@ -1980,16 +1979,22 @@ p + .stat {
 	padding: 0;
 	cursor: pointer;
 	transition: 0.1s all;
+    border: 1px solid black;
 }
 
 .my_button:hover {
-	background-color: #d83e33;
+	background-color: #92B5AD;
 	color: #f2f2f2;
 }
 
 .my_button2:hover {
-	background-color: #d83e33;
+	background-color: #92B5AD;
 	color: #f2f2f2;
+}
+
+.calc_display {
+	text-align: right;
+    font-size: 30px
 }
 
 .btn:active{
@@ -2881,7 +2886,7 @@ select[multiple] {
     margin: 0 0 1rem 0;
     padding: 1rem;
     border: 1px solid rgba(10, 10, 10, 0.25);
-    border-radius: 0;
+    border-radius: 30px;
     background-color: #fff;
     color: #0a0a0a
 }
@@ -2895,7 +2900,7 @@ select[multiple] {
 }
 
 .callout.primary {
-    background-color: #d7ecfa;
+    background-color: #7EBEB0;
     color: #0a0a0a
 }
 

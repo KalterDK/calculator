@@ -2,7 +2,6 @@ var Numbers = document.querySelectorAll('.number'),
     Operations = document.querySelectorAll('.operation'),
     DecimalBtn = document.getElementById('decimal'),
     ClearBtns = document.querySelectorAll('.clear_btn'),
-    ResultBtn = document.getElementById('result'),
     Display = document.getElementById('display'),
     MemoryCurrentNumber = 0,
     MemoryNewNumber = false,
@@ -34,22 +33,22 @@ DecimalBtn.addEventListener('click', Decima);
 
 function numberPress(number) {
     if (MemoryNewNumber) {
-        display.value = number;
+        Display.value = number;
         MemoryNewNumber = false;
     } else {
-        if (display.value === '0') {
-            display.value = number;
+        if (Display.value === '0') {
+            Display.value = number;
         } else {
-            display.value += number;
+            Display.value += number;
         }
     }
 }
 
 function operation(op) {
-    var localOperationMemory = display.value;
+    var localOperationMemory = Display.value;
 
     if (MemoryNewNumber && MemoryPendingOperation !== '=') {
-        display.value = MemoryCurrentNumber;
+        Display.value = MemoryCurrentNumber;
     } else {
         MemoryNewNumber = true;
         if (MemoryPendingOperation === '+') {
@@ -63,13 +62,13 @@ function operation(op) {
         } else {
             MemoryCurrentNumber = parseFloat(localOperationMemory);
         }
-        display.value = MemoryCurrentNumber;
+        Display.value = MemoryCurrentNumber;
         MemoryPendingOperation = op;
     }
 }
 
-function Decima(argument) {
-    var localDecimalMemory = display.value;
+function Decima() {
+    var localDecimalMemory = Display.value;
 
     if (MemoryNewNumber) {
         localDecimalMemory = '0.';
@@ -79,15 +78,15 @@ function Decima(argument) {
             localDecimalMemory += '.';
         }
     }
-    display.value = localDecimalMemory;
+    Display.value = localDecimalMemory;
 }
 
 function clear(id) {
     if (id === 'ce') {
-        display.value = '0';
+        Display.value = '0';
         MemoryNewNumber = true;
     } else if ( id === 'c') {
-        display.value = '0';
+        Display.value = '0';
         MemoryNewNumber = true;
         MemoryCurrentNumber = 0;
         MemoryPendingOperation = '';
