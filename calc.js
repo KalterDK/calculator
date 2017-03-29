@@ -92,5 +92,4 @@ function clear(id) {
         MemoryCurrentNumber = 0;
         MemoryPendingOperation = '';
     }
-
 }
